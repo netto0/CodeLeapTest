@@ -17,7 +17,7 @@ export default function WelcomeScreen() {
 
   return (
     <div className="w-full h-screen flex justify-center items-center">
-      <div className="flex w-[500px] h-[205px] px-4 py-6 flex-col gap-4 rounded-lg bg-[#FFFFFF] shadow-lg">
+      <form onSubmit={logUser} className="flex w-[500px] h-[205px] px-4 py-6 flex-col gap-4 rounded-lg bg-[#FFFFFF] shadow-lg">
         <h1 className="font-bold text-xl">Welcome to CodeLeap network!</h1>
         <Input
           label="Please enter your username"
@@ -26,7 +26,7 @@ export default function WelcomeScreen() {
           handleChange={(e: any) => handleChange(setUserName, e.target.value)}
         />
         <Button text="ENTER" onClick={logUser} />
-      </div>
+      </form>
     </div>
   );
 }
