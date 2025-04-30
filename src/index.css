@@ -5,10 +5,16 @@
     --font-roboto: "Roboto", sans-serif
 }
 
-/* button:hover {
-    cursor: pointer
-} */
-
 html {
     background-color: #DDDDDD;
+}
+
+svg:hover {
+    scale: 110%;
+    transition: 200ms;
+}
+
+svg:active {
+    scale: 90%;
+    transition: 100ms;
 }

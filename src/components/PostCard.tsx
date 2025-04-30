@@ -32,10 +32,10 @@ export default function PostCard({ post }: iProps) {
         {ownPost && (
           <div className="flex gap-8">
             <FaTrashAlt
-              className="hover:cursor-pointer"
+              className="hover:cursor-pointer hover:text-red-400 transition-colors"
               onClick={handleDelete}
             />
-            <FiEdit className="hover:cursor-pointer" onClick={handleEdit} />
+            <FiEdit className="hover:cursor-pointer hover:text-green-400 transition-colors" onClick={handleEdit} />
           </div>
         )}
       </h1>
