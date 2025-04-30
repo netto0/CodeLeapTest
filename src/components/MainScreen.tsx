@@ -31,11 +31,13 @@ export default function MainScreen() {
           />
         </div>
       </h1>
-      <div className="flex flex-col p-4 gap-4">
+      <div className="flex flex-col p-4 gap-4 w-dvw sm:w-full">
         <WhatsOnMind />
-        {allPosts.map((item) => (
-          <PostCard post={item} key={item.id} />
-        ))}
+        <div className="flex flex-col gap-4">
+          {allPosts.map((item) => (
+            <PostCard post={item} key={item.id} />
+          ))}
+        </div>
       </div>
     </div>
   );

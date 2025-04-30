@@ -26,7 +26,7 @@ export default function PostCard({ post }: iProps) {
   }
 
   return (
-    <div className="h-80 rounded-xl">
+    <div className="h-80 rounded-xl w-full">
       <h1 className="flex justify-between  text-2xl text-white font-bold bg-[#7695ec] px-8 py-4 rounded-t-xl border border-[#777777] border-b-0">
         {post.title}
         {ownPost && (
